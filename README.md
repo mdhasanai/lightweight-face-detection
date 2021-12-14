@@ -1,4 +1,4 @@
-# Face-Detector-1MB-with-landmark
+# Face-Detector with landmark
 ## Features
  - Retinaface-mobile0.25 model converted into ncnn python/ opencv onnx/ pytorch python
  - Face-Detector-1MB slim 
@@ -7,7 +7,7 @@
  - Network parameter and flop calculation
 
 
-# Ultra-lightweight face detector with keypoint detection
+# lightweight face detector with keypoint detection
 
 Provides a series of face detectors suitable for mobile deployment including key face detectors: Modified the anchor size of [Retinaface-mobile0.25](https://github.com/biubug6/Pytorch_Retinaface) to make it more suitable for edge computing; Reimplemented [Face-Detector-1MB](https://github.com/Linzaer/Ultra-Light-Fast-Generic-Face-Detector-1MB) and added key point detection and ncnn C++ The deployment function, in most cases, the accuracy is better than the original version.
 
@@ -15,10 +15,10 @@ Provides a series of face detectors suitable for mobile deployment including key
 ## Requirments
 - Ubuntu18.04
 - Python3.7
-- Pytorch1.2
-- CUDA10.0 + CUDNN7.5
+- opencv
+- numpy
 
-## accuracy
+## Accuracy
 ### Widerface test
 
  - Accuracy in wider face val (single-scale input resolution: **320*240**）
